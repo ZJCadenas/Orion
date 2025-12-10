@@ -4,7 +4,6 @@
 :root {
     --color-negro: #212121;
     --color-negro-footer: #151515; 
-    /* CAMBIO: Violeta Cyberpunk */
     --color-violeta: #7b2cbf; 
     --color-azul: #3a86ff;
     --color-rojo: #ff4e3c;
@@ -293,6 +292,7 @@ img {
     font-family: 'Space Grotesk', sans-serif;
     transition: background-color 0.3s ease, transform 0.3s ease;
     margin-top: 1rem;
+    border: none;
 }
 
 .cta-button:hover {
@@ -441,7 +441,6 @@ img {
     background: #1a1a1a;
     padding: 2rem;
     border-radius: 8px;
-    /* CAMBIO: Uso de la nueva variable violeta */
     border-left: 4px solid var(--color-violeta);
 }
 
@@ -466,8 +465,8 @@ img {
     border: 1px solid #333;
 }
 
+/* CAMBIO: Se eliminaron los filtros para que el mapa se vea por defecto */
 .map-wrapper iframe {
-    filter: grayscale(100%) invert(92%) contrast(83%);
     display: block;
 }
 
@@ -587,7 +586,7 @@ img {
     background: radial-gradient(circle, rgba(58,134,255,0.1) 0%, rgba(0,0,0,0) 70%);
 }
 
-/* Sección Autor */
+/* Sección Autor (Actualizada con Foto) */
 .author-section {
     padding: 4rem 0;
     background: #151515;
@@ -615,37 +614,48 @@ img {
     margin-bottom: 1rem;
 }
 
+/* Contenedor circular de la foto */
 .author-visual {
-    width: 150px;
-    height: 150px;
-    background: #222;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 3rem;
-    font-weight: bold;
-    color: #444;
+    width: 180px; 
+    height: 180px;
+    background: #000;
+    border-radius: 50%; 
     position: relative;
-    border: 2px solid #333;
+    border: 3px solid var(--color-azul);
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(58, 134, 255, 0.3);
 }
 
+/* Estilos para la FOTO */
+.author-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    filter: contrast(110%) brightness(90%); 
+}
+
+/* La línea de escaneo */
 .scan-line {
     position: absolute;
     width: 100%;
-    height: 2px;
+    height: 3px;
     background: var(--color-azul);
     top: 0;
-    animation: scan 3s infinite linear;
-    box-shadow: 0 0 10px var(--color-azul);
+    z-index: 2;
+    animation: scan 2.5s infinite linear;
+    box-shadow: 0 0 15px var(--color-azul), 0 0 5px #fff;
+    opacity: 0.8;
 }
 
 @keyframes scan {
-    0% { top: 0%; opacity: 0; }
+    0% { top: -10%; opacity: 0; }
     10% { opacity: 1; }
     90% { opacity: 1; }
-    100% { top: 100%; opacity: 0; }
+    100% { top: 110%; opacity: 0; }
 }
 
 /* ======================================= */
@@ -756,6 +766,31 @@ img {
     color: rgba(242, 242, 242, 0.2);
 }
 
+/* ======================================= */
+/* ===== BOTONERA AUTOR (NUEVO) ===== */
+/* ======================================= */
+
+.author-buttons-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.author-buttons-container .cta-button {
+    margin-top: 0; 
+    font-size: 0.9rem;
+    padding: 0.8rem 1.5rem;
+    text-align: center;
+    background: var(--color-azul);
+    color: var(--color-blanco);
+    border: none;
+}
+
+.author-buttons-container .cta-button:hover {
+    background-color: #2978f8;
+    transform: translateY(-3px);
+}
 
 /* ======================================= */
 /* ===== MEDIA QUERIES (RESPONSIVE) ===== */
@@ -874,6 +909,22 @@ img {
 
     .author-info {
         width: 100%;
+    }
+
+    /* Ajuste para Botonera Autor en Móvil */
+    .author-buttons-container {
+        flex-direction: column; /* En móvil, uno abajo del otro */
+        width: 100%;
+    }
+    
+    .author-buttons-container .cta-button {
+        width: 100%;
+    }
+    
+    /* En móvil, la foto va arriba */
+    .author-visual {
+        order: -1; 
+        margin-bottom: 1rem;
     }
 }
 
