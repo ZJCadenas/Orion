@@ -1,10 +1,7 @@
-/* ======================================= */
-/* ===== VARIABLES Y CONFIGURACIÓN ===== */
-/* ======================================= */
 :root {
     --color-negro: #212121;
     --color-negro-footer: #151515; 
-    --color-violeta: #7b2cbf; 
+    --color-violeta: #7b2cbf;
     --color-azul: #3a86ff;
     --color-rojo: #ff4e3c;
     --color-blanco: #f2f2f2;
@@ -12,9 +9,6 @@
     --font-mono: 'Courier New', Courier, monospace;
 }
 
-/* ======================================= */
-/* ===== RESETEO Y ESTILOS GLOBALES ===== */
-/* ======================================= */
 * {
     margin: 0;
     padding: 0;
@@ -70,9 +64,6 @@ img {
     display: block;
 }
 
-/* ======================================= */
-/* ===== HEADER Y NAVEGACIÓN ===== */
-/* ======================================= */
 .main-header {
     background: var(--color-negro);
     border-bottom: 1px solid rgba(242, 242, 242, 0.1);
@@ -134,9 +125,6 @@ img {
     display: none;
 }
 
-/* ======================================= */
-/* ===== SECCIÓN HERO ===== */
-/* ======================================= */
 .hero {
     position: relative;
     height: 80vh;
@@ -188,9 +176,6 @@ img {
     font-family: 'Space Grotesk', sans-serif;
 }
 
-/* ======================================= */
-/* ===== INTRODUCCIÓN ===== */
-/* ======================================= */
 .intro {
     padding: 5rem 0;
     text-align: center;
@@ -207,9 +192,6 @@ img {
     font-size: 1.1rem;
 }
 
-/* ======================================= */
-/* ===== FEATURES (HOME) ===== */
-/* ======================================= */
 .features {
     padding: 5rem 0;
     background: #1a1a1a;
@@ -263,9 +245,6 @@ img {
     margin-bottom: 1rem;
 }
 
-/* ======================================= */
-/* ===== CTA (HOME) ===== */
-/* ======================================= */
 .cta {
     padding: 6rem 0;
     text-align: center;
@@ -300,9 +279,6 @@ img {
     transform: translateY(-3px);
 }
 
-/* ======================================= */
-/* ===== PÁGINA CONTACTO ===== */
-/* ======================================= */
 .page-header {
     padding: 8rem 0 4rem;
     text-align: center;
@@ -465,21 +441,15 @@ img {
     border: 1px solid #333;
 }
 
-/* CAMBIO: Se eliminaron los filtros para que el mapa se vea por defecto */
 .map-wrapper iframe {
     display: block;
 }
-
-/* ======================================= */
-/* ===== PÁGINA SOBRE (TIMELINE) ===== */
-/* ======================================= */
 
 .timeline-section {
     padding: 4rem 0;
     position: relative;
 }
 
-/* Línea Central Conectora */
 .timeline-section::before {
     content: '';
     position: absolute;
@@ -508,7 +478,6 @@ img {
     position: relative;
 }
 
-/* Flechita apuntando a la línea central */
 .timeline-content::after {
     content: '';
     position: absolute;
@@ -529,7 +498,6 @@ img {
     align-items: center;
 }
 
-/* Invertir orden para el Zig-Zag */
 .timeline-item.reverse {
     flex-direction: row-reverse;
 }
@@ -543,7 +511,6 @@ img {
     border-bottom: 1px solid rgba(242, 242, 242, 0.1);
 }
 
-/* Etiquetas y Listas */
 .phase-tag {
     display: inline-block;
     background: var(--color-azul);
@@ -572,7 +539,6 @@ img {
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Cajas Visuales (Placeholders de iconos) */
 .visual-box {
     width: 200px;
     height: 200px;
@@ -586,7 +552,15 @@ img {
     background: radial-gradient(circle, rgba(58,134,255,0.1) 0%, rgba(0,0,0,0) 70%);
 }
 
-/* Sección Autor (Actualizada con Foto) */
+.visual-box svg {
+    width: 75px; 
+    height: 75px;
+    stroke: var(--color-azul); 
+    stroke-width: 1.5; 
+    fill: none; 
+    filter: drop-shadow(0 0 5px rgba(58, 134, 255, 0.5)); 
+}
+
 .author-section {
     padding: 4rem 0;
     background: #151515;
@@ -614,7 +588,6 @@ img {
     margin-bottom: 1rem;
 }
 
-/* Contenedor circular de la foto */
 .author-visual {
     width: 180px; 
     height: 180px;
@@ -626,7 +599,6 @@ img {
     box-shadow: 0 0 20px rgba(58, 134, 255, 0.3);
 }
 
-/* Estilos para la FOTO */
 .author-img {
     width: 100%;
     height: 100%;
@@ -638,7 +610,6 @@ img {
     filter: contrast(110%) brightness(90%); 
 }
 
-/* La línea de escaneo */
 .scan-line {
     position: absolute;
     width: 100%;
@@ -658,9 +629,28 @@ img {
     100% { top: 110%; opacity: 0; }
 }
 
-/* ======================================= */
-/* ===== FOOTER ===== */
-/* ======================================= */
+.author-buttons-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.author-buttons-container .cta-button {
+    margin-top: 0; 
+    font-size: 0.9rem;
+    padding: 0.8rem 1.5rem;
+    text-align: center;
+    background: var(--color-azul);
+    color: var(--color-blanco);
+    border: none;
+}
+
+.author-buttons-container .cta-button:hover {
+    background-color: #2978f8;
+    transform: translateY(-3px);
+}
+
 .main-footer {
     background-color: var(--color-negro-footer);
     padding: 4rem 0 2rem;
@@ -703,7 +693,7 @@ img {
     position: absolute;
     left: 0;
     bottom: -5px;
-    width: 30px;
+    width: 100%;
     height: 2px;
     background-color: var(--color-azul);
 }
@@ -730,6 +720,24 @@ img {
     margin-bottom: 0.5rem;
     color: var(--color-texto-gris);
     font-size: 0.9rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 1.5rem;
+}
+
+.social-link svg {
+    width: 24px;
+    height: 24px;
+    fill: var(--color-texto-gris);
+    transition: fill 0.3s ease, transform 0.3s ease;
+}
+
+.social-link:hover svg {
+    fill: var(--color-azul);
+    transform: translateY(-3px);
 }
 
 .footer-bottom {
@@ -766,36 +774,6 @@ img {
     color: rgba(242, 242, 242, 0.2);
 }
 
-/* ======================================= */
-/* ===== BOTONERA AUTOR (NUEVO) ===== */
-/* ======================================= */
-
-.author-buttons-container {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    margin-top: 2rem;
-}
-
-.author-buttons-container .cta-button {
-    margin-top: 0; 
-    font-size: 0.9rem;
-    padding: 0.8rem 1.5rem;
-    text-align: center;
-    background: var(--color-azul);
-    color: var(--color-blanco);
-    border: none;
-}
-
-.author-buttons-container .cta-button:hover {
-    background-color: #2978f8;
-    transform: translateY(-3px);
-}
-
-/* ======================================= */
-/* ===== MEDIA QUERIES (RESPONSIVE) ===== */
-/* ======================================= */
-
 @media (max-width: 768px) {
     h1 { font-size: 2.5rem; }
     h2 { font-size: 2rem; }
@@ -810,23 +788,19 @@ img {
         text-align: center;
     }
     
-    /* CAMBIO: Menú móvil ajustado (Glassmorphism + Panel derecho) */
     .nav-menu {
         position: fixed;
         top: 70px;
-        left: auto; /* Quitamos el left: 0 */
-        right: 0;   /* Alineado a la derecha */
-        width: 70%; /* Ancho reducido */
+        left: auto;
+        right: 0;
+        width: 70%;
         max-width: 300px;
         height: calc(100vh - 70px);
-        
-        /* Fondo transparente con Blur */
         background: rgba(33, 33, 33, 0.85); 
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
         border-left: 1px solid rgba(242, 242, 242, 0.1);
         box-shadow: -5px 0 15px rgba(0,0,0,0.5);
-
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -867,13 +841,9 @@ img {
 
     .cards-container { grid-template-columns: repeat(2, 1fr); }
 
-    /* Timeline en Móvil */
-    .timeline-section::before {
-        left: 20px; 
-    }
+    .timeline-section::before { left: 20px; }
 
-    .timeline-item, 
-    .timeline-item.reverse {
+    .timeline-item, .timeline-item.reverse {
         flex-direction: column; 
         align-items: flex-start;
         margin-left: 40px; 
@@ -895,33 +865,23 @@ img {
         border-bottom: 1px solid rgba(242, 242, 242, 0.1);
     }
 
-    .timeline-image {
-        width: 100%;
-        margin-bottom: 2rem;
-    }
+    .timeline-image { width: 100%; margin-bottom: 2rem; }
 
-    /* Author Card en Móvil */
     .author-card {
         flex-direction: column;
         text-align: center;
         gap: 2rem;
     }
 
-    .author-info {
-        width: 100%;
-    }
+    .author-info { width: 100%; }
 
-    /* Ajuste para Botonera Autor en Móvil */
     .author-buttons-container {
-        flex-direction: column; /* En móvil, uno abajo del otro */
+        flex-direction: column;
         width: 100%;
     }
     
-    .author-buttons-container .cta-button {
-        width: 100%;
-    }
+    .author-buttons-container .cta-button { width: 100%; }
     
-    /* En móvil, la foto va arriba */
     .author-visual {
         order: -1; 
         margin-bottom: 1rem;
