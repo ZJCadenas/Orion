@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre el Proyecto - ORION</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon-orion-.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon-orion-.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-orion-.png"> 
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-orion-.png">
+    <link rel="shortcut icon" href="favicon-orion-.png">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">
+                    <img src="logo-orion.png" alt="Logo ORION">
+                </a>
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="sobre.html" class="active">Sobre ORION</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+                <label for="nav-toggle" class="nav-toggle-label">
+                    <span></span>
+                </label>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Arquitectura del Proyecto</h1>
+                <p>La convergencia entre Estrategia, Diseño y Código.</p>
+            </div>
+        </section>
+
+        <section class="intro">
+            <div class="container">
+                <h2>Misión: Eliminar el Ruido</h2>
+                <p>
+                    ORION no es solo una app, es la respuesta a la fatiga de alertas que sufren los expertos en ciberseguridad. 
+                    Este proyecto académico integra conocimientos de tres áreas clave para crear una solución robusta, 
+                    coherente y centrada en el usuario.
+                </p>
+            </div>
+        </section>
+
+        <section class="manifesto-section" style="padding: 5rem 0; background: #1a1a1a; text-align: center;">
+            <div class="container">
+                <h2 style="color: var(--color-azul); margin-bottom: 2rem;">Manifiesto Orion</h2>
+                <blockquote style="font-size: 1.25rem; font-style: italic; max-width: 900px; margin: 0 auto; line-height: 1.8; color: var(--color-blanco);">
+                    "En un ecosistema saturado donde el 90% de las alertas son solo ruido, el verdadero peligro ya no es lo que ves, sino lo que se esconde en el silencio. <br><br>
+                    Durante demasiado tiempo, los expertos hemos vivido a la defensiva. Abrumados por la fatiga de alertas, perdiendo horas críticas separando lo urgente de lo irrelevante. <strong>Orion nace para romper ese ciclo.</strong> <br><br>
+                    Creemos que la tecnología por sí sola es una caja negra, y que la comunidad aislada es lenta. Pero juntas, son la defensa definitiva. Fusionamos la precisión de la IA con la intuición táctica de la comunidad. <br><br>
+                    No somos un escudo más. Somos el arma que te devuelve el control. Porque para proteger lo que importa, no basta con vigilar. Hay que salir a cazar."
+                </blockquote>
+            </div>
+        </section>
+        <section class="timeline-section">
+            <div class="container">
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="phase-tag">Fase 1: Estrategia</span>
+                        <h3>Investigación UX/UI</h3>
+                        <p>
+                            Todo comenzó con una pregunta: <em>"¿Cómo podríamos ayudar a un experto a prevenir accesos sospechosos?"</em>.
+                            A través de entrevistas en profundidad y la creación de arquetipos como "José", detectamos que el problema real no era la falta de datos, sino el exceso de ellos.
+                        </p>
+                        <ul class="tech-list">
+                            <li>User Journey Maps</li>
+                            <li>Arquetipos</li>
+                            <li>Prototipado (MVP)</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-image">
+                         <div class="visual-box ux-box">
+                            <span class="icon">🔍</span>
+                         </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item reverse">
+                    <div class="timeline-content">
+                        <span class="phase-tag">Fase 2: Identidad</span>
+                        <h3>Estética y Creatividad Visual</h3>
+                        <p>
+                            La funcionalidad necesita forma. Definimos la identidad de "El Cazador" (Orión). 
+                            Optamos por un <strong>Dark Mode</strong> profundo para reducir la fatiga visual en entornos SOC, acentuado con azules eléctricos y violetas tácticos que evocan tecnología y seguridad.
+                        </p>
+                        <ul class="tech-list">
+                            <li>Naming & Branding</li>
+                            <li>Sistemas de Grillas</li>
+                            <li>Diseño de Interfaz</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-image">
+                        <div class="visual-box design-box">
+                            <span class="icon">🎨</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="phase-tag">Fase 3: Desarrollo</span>
+                        <h3>Desarrollo Web (HDD III)</h3>
+                        <p>
+                            La materialización de la idea. Desarrollamos un sitio web promocional totalmente responsive, 
+                            utilizando HTML5 semántico y CSS3 moderno (Flexbox, Grid, Variables). El código está optimizado para ser limpio, escalable y fiel a la estética planteada.
+                        </p>
+                        <ul class="tech-list">
+                            <li>HTML5 Semántico</li>
+                            <li>CSS3 & Animaciones</li>
+                            <li>Diseño Responsive</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-image">
+                        <div class="visual-box code-box">
+                            <span class="icon">💻</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="author-section">
+            <div class="container">
+                <div class="author-card">
+                    <div class="author-info">
+                        <h2>Operador del Proyecto</h2>
+                        <h3>Jonathan Cadenas</h3>
+                        <p class="role">Estudiante | Comunicación y Marketing Digital</p>
+                        <p class="bio">
+                            Este portafolio representa la integración final de los conocimientos adquiridos durante el ciclo 2025 
+                            en la Nueva Escuela de Diseño y Comunicación.
+                        </p>
+                        <a href="#" target="_blank" class="cta-button">
+                            Ver Prototipo Interactivo
+                        </a>
+                    </div>
+                    <div class="author-visual">
+                        <div class="scan-line"></div>
+                        <span class="author-initials">JC</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="logo-orion.png" alt="Logo ORION" style="height: 40px; margin-bottom: 1rem;">
+                    </div>
+                    <p class="footer-desc">
+                        Elimina el ruido. Enfoca lo que importa. <br>
+                        El sistema de inteligencia híbrida para la defensa proactiva.
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>Explorar</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="sobre.html">Sobre el Proyecto</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Créditos Académicos</h4>
+                    <p><strong>Autor:</strong> Jonathan Cadenas</p>
+                    <p><strong>Materia:</strong> Herramientas de Diseño Digital III</p>
+                    <p><strong>Carrera:</strong> Comunicación y Marketing Digital</p>
+                    <p>Nueva Escuela de Diseño y Comunicación</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Jonathan Cadenas - ORION. Todos los derechos reservados.</p>
+                <div class="legal-links">
+                    <a href="#">Política de Privacidad</a>
+                    <span class="separator">|</span>
+                    <a href="#">Términos de Servicio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
