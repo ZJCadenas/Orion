@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - ORION</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon-orion-.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-orion-.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-orion-.png"> 
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-orion-.png">
+    <link rel="shortcut icon" href="assets/favicon-orion-.png">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">
+                    <img src="assets/logo-orion.png" alt="Logo ORION">
+                </a>
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="sobre.html">Sobre ORION</a></li>
+                    <li><a href="contacto.html" class="active">Contacto</a></li>
+                </ul>
+                <label for="nav-toggle" class="nav-toggle-label">
+                    <span></span>
+                </label>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Establecer Conexión</h1>
+                <p>¿Listo para blindar tu infraestructura? Envíanos una señal.</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    
+                    <div class="contact-form-col">
+                        <form class="terminal-form">
+                            <div class="terminal-header">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                                <span class="terminal-title">root@orion:~# iniciar_contacto.sh</span>
+                            </div>
+                            
+                            <div class="form-body">
+                                <div class="form-group">
+                                    <label for="nombre">> Ingrese Identificador (Nombre):</label>
+                                    <input type="text" id="nombre" name="nombre" placeholder="_" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email">> Ingrese Enlace (Email):</label>
+                                    <input type="email" id="email" name="email" placeholder="_" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="mensaje">> Cifrar Mensaje:</label>
+                                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="_" required></textarea>
+                                </div>
+
+                                <div class="form-checkbox">
+                                    <input type="checkbox" id="newsletter" name="newsletter">
+                                    <label for="newsletter">Suscribirse al boletín de inteligencia de ORION.</label>
+                                </div>
+
+                                <button type="submit" class="terminal-btn">
+                                    Ejecutar Transmisión
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="contact-info-col">
+                        <div class="info-card">
+                            <h3>Coordenadas de la Base</h3>
+                            <p>Nuestros analistas operan desde nodos seguros, listos para responder a incidentes globales.</p>
+                            
+                            <ul class="info-list">
+                                <li><strong>Ubicación:</strong> Av. Callao 67, CABA</li>
+                                <li><strong>Email Encriptado:</strong> <a href="mailto:contacto@orion-sec.com">contacto@orion-sec.com</a></li>
+                                <li><strong>Línea Segura:</strong> +54 11 4371-XXXX</li>
+                            </ul>
+                        </div>
+
+                        <div class="map-wrapper">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.016887889451!2d-58.39419062349977!3d-34.60373445749729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac0463b53b1%3A0x6291a272765f0ce1!2sAv.%20Callao%2067%2C%20C1022%20CABA!5e0!3m2!1ses-419!2sar!4v1701234567890!5m2!1ses-419!2sar"
+                                width="100%" 
+                                height="300" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+  <footer class="main-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <img src="assets/logo-orion.png" alt="Logo ORION" style="height: 40px; margin-bottom: 1rem;">
+                </div>
+                <p class="footer-desc">
+                    Elimina el ruido. Enfoca lo que importa. <br>
+                    El sistema de inteligencia híbrida para la defensa proactiva.
+                </p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/zjcadenas/" target="_blank" class="social-link">
+                        <img src="assets/Inicon.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://www.behance.net/zjcadenas" target="_blank" class="social-link">
+                        <img src="assets/Beicon.png" alt="Behance">
+                    </a>
+                    <a href="https://www.instagram.com/zjcadenas" target="_blank" class="social-link">
+                        <img src="assets/IGicon.png" alt="Instagram">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Explorar</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="sobre.html">Sobre el Proyecto</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Créditos Académicos</h4>
+                <p><strong>Autor:</strong> Jonathan Cadenas</p>
+                <p><strong>Materia:</strong> Herramientas de Diseño Digital III</p>
+                <p><strong>Carrera:</strong> Comunicación y Marketing Digital</p>
+                <p>Nueva Escuela de Diseño y Comunicación</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Jonathan Cadenas - ORION. Todos los derechos reservados.</p>
+            <div class="legal-links">
+                <a href="#">Política de Privacidad</a>
+                <span class="separator">|</span>
+                <a href="#">Términos de Servicio</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
